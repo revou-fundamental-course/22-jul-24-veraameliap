@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Travel Agent</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <nav class="container">
+        <a href="#home" id="logo">Inholo Travel</a>
+        <input type="checkbox" id="bar">
+        <label for="bar">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#ourpackage">Our Package</a>
+          </li>
+          <li>
+            <a href="#contactus">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="home">
+        <div class="title">
+          <h1>The world is wide, <br> let's explore together!</h1>
+          <a class="btn" href="#more">More</a>
+        </div>
+      </section>
+
+      <section id="more">
+        <h1 style="text-align: center; padding-top: 150px; color: #696969;"><b>MOST VISITED ATTRACTION</b></h1>
+        <div class="row-flip">
+          <div class="column-flip">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="bali.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>INDONESIA</h1> 
+                  <p>Tanak Lot, Bali</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-flip">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="korea.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>SOUTH KOREA</h1> 
+                  <p>Seoul, South Korea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-flip">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="paris.jpg" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>France</h1> 
+                  <p>Paris, France</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ourpackage">
+        <h1 style="text-align: center; padding-top: 90px; color: #696969;"><b>OUR PACKAGE</b></h1>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="package.jpg" style="width:100%; padding-top: 20px;">
+            </div>
+            <div class="mySlides fade">
+              <img src="package1.jpg" style="width:100%;">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+      </section>
+
+      <section id="contactus">
+        <div class="row">
+          <div class="column">
+            <h2>About Us</h2>
+            <p style="font-size: 20px; padding-top: 10px;">Inholo Travel is a travel agent in Indonesia that provides tour packages for domestic and international tourism that will provide <br> the best travel experience to make your dreams come true at affordable prices.</p>
+          </div>
+          <div class="column">
+            <div class="contact">
+              <h2>Contact Us</h2>
+              <form action="#">
+                <div class="input-box">
+                  <div class="input-field field">
+                    <label for=""></label>
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                  </div>
+                  <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                  </div>
+                  <div class="input-field field">
+                    <select name="destination" class="item">
+                      <option value="" selected>What are you interested in?</option>
+                      <option value="bali">Bali</option>
+                      <option value="tokyo">Tokyo</option>
+                      <option value="new york">New York</option>
+                      <option value="amsterdam">Amsterdam</option>
+                      <option value="cape town">Cape Town</option>
+                      <option value="berlin">Berlin</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit">SEND</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Created by: Inholo Travel</p>
+      </footer>
+
+      <script src="script.js"></script>
+    </body>
+</html>
